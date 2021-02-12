@@ -1,3 +1,3 @@
-# Background Color Changer
+# Counter Project
 
-TODO: Add project information 
+TODO: Add project information
