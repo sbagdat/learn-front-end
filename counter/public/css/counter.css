@@ -1,0 +1,49 @@
+.indicator {
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #fff;
+  font-family: 'Nova Square', cursive;
+  font-size: 4em;
+  margin: 0 auto 0.5em;
+}
+
+button {
+  background-color: #fff;
+  border-radius: 4px;
+  border-width: 1px;
+  color: #333;
+  cursor: pointer;
+  padding: 12px 8px;
+  font-size: 1.1em;
+  outline: none;
+}
+
+button:hover {
+  background-color: #4169e1;
+  color: #fff;
+}
+
+button:active {
+  background-color: #7a2333;
+  color: #fff;
+}
+
+button:disabled {
+  background-color: lightgray;
+  color: gray;
+}
+
+.positive {
+  color: greenyellow;
+}
+
+.negative {
+  color: orangered;
+}
+
+.zero {
+  color: #fff;
+}
