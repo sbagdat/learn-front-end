@@ -14,8 +14,8 @@
 .next-btn i, .prev-btn i {
   color: #43a7d4;
   display: block;
-  font-size: 1.5em;
-  padding: 10px;
+  font-size: 1.2em;
+  padding: 4px;
 }
 
 .next-btn i:hover, .prev-btn i:hover {
@@ -61,7 +61,7 @@ figure {
   box-shadow: 0 0 4px #49b8ea;
   color: #fff;
   font-size: 0.6em;
-  padding: 8px;
+  padding: 4px;
   position: relative;
   left: -90px;
   top: -60px;
@@ -107,8 +107,9 @@ figure {
   }
 
   .quote-icon {
+    padding: 8px;
     top: -70px;
-    left: -110px;
+    left: -115px;
   }
 
   #reviews .comment {
