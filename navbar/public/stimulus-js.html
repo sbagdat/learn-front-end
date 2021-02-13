@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Background Color Changer example to teach JavaScript.">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <script src="bundle.js"></script>
+    <title>Customer Reviews (Vanilla JS [OOP])</title>
+</head>
+<body>
+<header class="page-header">
+    <h1>Customer Reviews (OOP)</h1>
+    <nav class="top-nav">
+        <ul>
+            <li><a class="nav-link" href="vanilla-js.html">Vanilla JS (Old School)</a></li>
+            <li><a class="nav-link" href="vanilla-js-oop.html">Vanilla JS (OOP)</a></li>
+            <li><a class="nav-link active" href="stimulus-js.html">Stimulus JS</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="reviews">
+        <article class="review"
+                 data-controller="review"
+                 data-review-current-id-value="0">
+            <header>
+                <figure>
+                    <img src=""
+                         class="customer-photo"
+                         data-review-target="photo">
+                    <i class="quote-icon icon-quote-right"></i>
+                </figure>
+                <h4 class="author" data-review-target="author"></h4>
+                <p class="job" data-review-target="job"></p>
+            </header>
+            <p class="comment" data-review-target="comment"></p>
+            <nav>
+                <button class="prev-btn" data-action="click->review#prev">
+                    <i class="icon-left-open"></i>
+                </button>
+                <button class="next-btn" data-action="click->review#next">
+                    <i class="icon-right-open"></i>
+                </button><br>
+                <button class="random-btn" data-action="click->review#rand">
+                    Surprise me
+                </button>
+            </nav>
+        </article>
+    </section>
+</main>
+</body>
+</html>
