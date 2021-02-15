@@ -6,7 +6,9 @@
   padding: 0;
 }
 
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+}
 
 main {
   margin-top: 100px;
@@ -25,7 +27,9 @@ main {
   position: sticky;
 }
 
-.navbar .logo { margin-left: 15px; }
+.navbar .logo {
+  margin-left: 15px;
+}
 
 .menu-toggle {
   justify-self: end;
@@ -116,6 +120,7 @@ main {
     margin-top: 0;
     transform: none !important;
     transition: none !important;
+    opacity: 100;
   }
 
   .sub-menu-container .nav-links {

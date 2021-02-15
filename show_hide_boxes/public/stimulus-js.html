@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Background Color Changer example to teach JavaScript.">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/color-changer.css">
+    <script src="bundle.js"></script>
+    <title>Background Color Changer</title>
+</head>
+<body>
+<header>
+    <h1 class="page-header">Background Color Changer</h1>
+    <nav class="top-nav">
+        <ul>
+            <li><a class="nav-link" href="vanilla-js.html">Vanilla JS (Old School)</a></li>
+            <li><a class="nav-link" href="vanilla-js-oop.html">Vanilla JS (OOP)</a></li>
+            <li><a class="nav-link active" href="stimulus-js.html">Stimulus JS</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="color-changer"
+             data-controller="background">
+        <section id="color-information">
+            <p>background-color:
+                <span id="bg-color-text"
+                      data-background-target="bgColorText">#f1f5f8</span>;
+            </p>
+        </section>
+        <section id="color-selector">
+            <button id="change-color-btn" data-action="click->background#changeColor">Change Background Color</button>
+        </section>
+    </section>
+</main>
+</body>
+</html>
