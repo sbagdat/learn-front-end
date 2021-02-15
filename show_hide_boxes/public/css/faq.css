@@ -2,17 +2,6 @@
   width: 90vw;
 }
 
-.question-box {
-  background-color: #fff;
-  border-radius: 3px;
-  box-shadow: 0 2px 2px #d44590;
-  border-top: 1px solid #d29fba;
-  margin-top: 10px;
-  height: 40px;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
 .question-header {
   border-bottom: 1px solid #c86b99;
   display: grid;
@@ -45,26 +34,48 @@
 .question-button .bar:first-child {
   height: 3px;
   transform: translateY(2px);
+  transition: all 0.3s ease-in-out;
   width: 20px;
 }
 
 .question-button .bar:last-child {
   height: 4px;
   transform: rotate(90deg) scaleY(0.7) translateX(-2px);
-  width: 20px;
   transition: all 0.3s ease-in-out;
-}
-
-.question-button .bar.minus {
-  transform: rotate(360deg) scaleY(1) translateY(-1px);
+  width: 20px;
 }
 
 .question-body {
   padding: 15px;
 }
 
+.question-box {
+  background-color: #fff;
+  border-radius: 3px;
+  border-top: 1px solid #d29fba;
+  box-shadow: 0 2px 2px #d44590;
+  height: 40px;
+  margin-top: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
 .question-box-open {
+  background-color: #ff1493;
+  color: #fff;
   height: auto;
-  background-color: deeppink;
-  color: white;
+}
+
+.question-box-open .bar {
+  background-color: #fff;
+}
+
+.question-box-open .bar:last-child {
+  transform: rotate(360deg) scaleY(1) translateY(-1px);
+}
+
+@media only screen and (min-width: 600px) {
+  .questions {
+    width: 70vw;
+  }
 }

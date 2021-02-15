@@ -13,12 +13,12 @@ This project is inspired by [blog post](https://www.freecodecamp.org/news/hone-y
 - [x] Counter
 - [x] Customer Reviews
 - [x] Responsive Navigation Bar
-- [x] Show/Hide Boxes
-- [x] Restaurant Menu
-- [x] Background Video
-- [x] Scroll
-- [x] Tabs
-- [x] Countdown
-- [x] Lorem Ipsum Generator
-- [x] Grocery List
-- [x] Slides
+- [x] Frequently Asked Questions
+- [ ] Restaurant Menu
+- [ ] Background Video
+- [ ] Scroll
+- [ ] Tabs
+- [ ] Countdown
+- [ ] Lorem Ipsum Generator
+- [ ] Grocery List
+- [ ] Slides

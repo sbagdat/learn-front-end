@@ -25,10 +25,11 @@ main {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-h1 {
+.page-header {
   color: #eee;
   text-align: center;
   font-size: 1.2em;
+  padding: 10px;
 }
 
 .top-nav {
