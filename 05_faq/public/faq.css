@@ -1,11 +1,42 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lato", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+main {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.page-header {
+  background-color: #1a1a1a;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: #eee;
+  text-align: center;
+  font-size: 2em;
+}
 
 .questions {
   width: 90vw;
 }
 
 .question-header {
-  border-bottom: 1px solid #c86b99;
+  border-bottom: 2px dashed #ffc0cb;
   display: grid;
   grid-template-columns: auto 42px;
   padding: 10px 15px;
@@ -33,6 +64,10 @@
   margin: 0;
 }
 
+.question-box-open .bar {
+  background-color: #fff;
+}
+
 .question-button .bar:first-child {
   height: 3px;
   transform: translateY(2px);
@@ -43,12 +78,13 @@
 .question-button .bar:last-child {
   height: 4px;
   transform: rotate(90deg) scaleY(0.7) translateX(-2px);
-  transition: all 0.3s ease-in-out;
+  transition: background-color 0.3s, transform 0.4s ease-in-out;
   width: 20px;
 }
 
 .question-body {
   padding: 15px;
+  line-height: 1.5em;
 }
 
 .question-box {
@@ -59,7 +95,7 @@
   height: 40px;
   margin-top: 10px;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
 }
 
 .question-box-open {
@@ -68,16 +104,32 @@
   height: auto;
 }
 
-.question-box-open .bar {
-  background-color: #fff;
-}
-
 .question-box-open .bar:last-child {
   transform: rotate(360deg) scaleY(1) translateY(-1px);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px 10px 20px;
+  font-size: 0.8em;
+  text-align: center;
+  width: 100vw;
+  background-color: #eee;
+  border-top: 2px solid #ddd;
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
 }
 
 @media only screen and (min-width: 600px) {
   .questions {
     width: 70vw;
+  }
+
+  footer {
+    font-size: 0.9em;
+    line-height: 2em;
+    letter-spacing: 0.1em;
   }
 }
