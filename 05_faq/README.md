@@ -1,3 +1,3 @@
-# Background Color Changer
+# FAQ Project
 
 TODO: Add project information 
