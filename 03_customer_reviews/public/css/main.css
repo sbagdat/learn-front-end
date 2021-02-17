@@ -1,29 +1,30 @@
 body {
   background-color: #f1f5f8;
-  font-family: 'Lato', sans-serif;
-  margin: 120px 0 0;
+  font-family: "Lato", sans-serif;
+  margin: 140px 0 0;
 }
 
 main {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 80vh;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 200px;
 }
 
-header {
+.page-header {
   background-color: #1a1a1a;
+  font-family: "Roboto Condensed", sans-serif;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  font-family: 'Roboto Condensed', sans-serif;
 }
 
 h1 {
   color: #eee;
-  text-align: center;
   font-size: 1.2em;
+  text-align: center;
 }
 
 .top-nav {
@@ -31,8 +32,8 @@ h1 {
 }
 
 .top-nav ul {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .top-nav ul li {
@@ -40,43 +41,57 @@ h1 {
 }
 
 .nav-link {
+  border-bottom: 1px solid #1a1a1a;
   color: #333;
-  text-align: center;
   display: block;
   padding: 10px;
-  border-bottom: 1px solid #1a1a1a;
+  text-align: center;
   text-decoration: none;
 }
 
 .nav-link:hover {
-  background-color: cornsilk;
+  background-color: #fff8dc;
 }
 
 .active {
-  background-color: cornsilk;
+  background-color: #fff8dc;
   font-weight: bold;
 }
 
-.active:before {
-  content: "> "
+.active::before {
+  content: "> ";
 }
 
-.active:after {
-  content: " <"
+.active::after {
+  content: " <";
+}
+
+footer {
+  background-color: #fff;
+  border-top: 2px solid #ddd;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  padding: 10px 10px 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
 }
 
 @media only screen and (min-width: 600px) {
   body {
-    margin-top: 150px;
+    margin-top: 140px;
   }
 
-  header {
+  .main-header {
     box-shadow: 0 2px 2px #ccc;
   }
 
   h1 {
-    letter-spacing: 0.1em;
     font-size: 2.2em;
+    letter-spacing: 0.1em;
   }
 
   .top-nav ul {
@@ -99,14 +114,20 @@ h1 {
 
   .active {
     background-color: #fff;
-    border-bottom: 10px solid #ffa300;;
+    border-bottom: 10px solid #ffa300;
   }
 
-  .active:before {
-    content: ""
+  .active::before {
+    content: "";
   }
 
-  .active:after {
-    content: ""
+  .active::after {
+    content: "";
+  }
+
+  footer {
+    font-size: 0.7em;
+    line-height: 2em;
+    letter-spacing: 0.1em;
   }
 }

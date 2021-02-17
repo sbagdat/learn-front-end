@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     randomBtn.addEventListener("click", () => {
-        oldIndex = currentIndex
+        let oldIndex = currentIndex
         while (oldIndex === currentIndex)
             currentIndex = Math.round(Math.random() * 3)
         photo.src = reviews[currentIndex].img

@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Background Color Changer example to teach JavaScript.">
+    <meta name="Description" content="Customer Reviews example to teach JavaScript.">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/reviews.css">
     <script src="bundle.js"></script>
-    <title>Customer Reviews (Vanilla JS [OOP])</title>
+    <title>Customer Reviews (Vanilla JS [Stimulus])</title>
 </head>
 <body>
 <header class="page-header">
-    <h1>Customer Reviews (OOP)</h1>
-    <nav class="top-nav">
+    <h1>Customer Reviews (Stimulus)</h1>
+    <nav class="top-nav" aria-label="Site menu">
         <ul>
             <li><a class="nav-link" href="vanilla-js.html">Vanilla JS (Old School)</a></li>
             <li><a class="nav-link" href="vanilla-js-oop.html">Vanilla JS (OOP)</a></li>
@@ -36,6 +36,7 @@
                 <figure>
                     <img src=""
                          class="customer-photo"
+                         alt="customer-photo"
                          data-review-target="photo">
                     <i class="quote-icon icon-quote-right"></i>
                 </figure>
@@ -43,7 +44,7 @@
                 <p class="job" data-review-target="job"></p>
             </header>
             <p class="comment" data-review-target="comment"></p>
-            <nav>
+            <nav aria-label="Related buttons">
                 <button class="prev-btn" data-action="click->review#prev">
                     <i class="icon-left-open"></i>
                 </button>
@@ -57,5 +58,12 @@
         </article>
     </section>
 </main>
+<footer>
+    Made with ❤️ by <a href="https://github.com/sbagdat" style="font-family: 'Arial', sans-serif;">Sıtkı Bağdat</a><br>
+    Source code:
+    <a href="https://github.com/sbagdat/learn-front-end/tree/main/03_customer_reviews">
+        https://github.com/sbagdat/learn-front-end/tree/main/03_customer_reviews
+    </a>
+</footer>
 </body>
 </html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Counter example to teach JavaScript.">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/counter.css">
+  <script src="bundle.js"></script>
+  <title>Counter (Stimulus JS)</title>
+</head>
+<body>
+<header>
+  <h1 class="page-header">Counter</h1>
+  <nav class="top-nav">
+    <ul>
+      <li><a class="nav-link" href="vanilla-js.html">Vanilla JS (Old School)</a></li>
+      <li><a class="nav-link" href="vanilla-js-oop.html">Vanilla JS (OOP)</a></li>
+      <li><a class="nav-link active" href="stimulus-js.html">Stimulus JS</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section id="counter" data-controller="counter"
+           data-counter-positive-class="positive"
+           data-counter-negative-class="negative"
+           data-counter-zero-class="zero">
+    <p class="indicator zero"
+       data-counter-target="indicator">0</p>
+    <section id="button-group">
+      <button id="decrease-btn"
+              data-action="click->counter#decrease">Decrease
+      </button>
+      <button id="reset-btn"
+              data-counter-target="resetButton"
+              data-action="click->counter#reset">Reset
+      </button>
+      <button id="increase-btn"
+              data-action="click->counter#increase">Increase
+      </button>
+    </section>
+  </section>
+</main>
+<footer>
+  Made with ❤️ by <a href="https://github.com/sbagdat" style="font-family: 'Arial', sans-serif;">Sıtkı Bağdat</a><br>
+  Source code:
+  <a href="https://github.com/sbagdat/learn-front-end/tree/main/02_counter">
+    https://github.com/sbagdat/learn-front-end/tree/main/02_counter
+  </a>
+</footer>
+</body>
+</html>
