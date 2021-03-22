@@ -6,7 +6,7 @@ You can freely use it for educational purposes.
 ## Beginner
 1. [Background Color Changer](https://sbagdat.github.io/learn-front-end/01_background_color_changer/public/vanilla-js.html)
 2. [Counter](https://sbagdat.github.io/learn-front-end/02_counter/public/vanilla-js.html)
-3. [Customer Reviews](https://sbagdat.github.io/learn-front-end/04_responsive_navbar/public/vanilla-js.html)
+3. [Customer Reviews](https://sbagdat.github.io/learn-front-end/03_customer_reviews/public/vanilla-js.html)
 4. [Responsive Navigation Bar](https://sbagdat.github.io/learn-front-end/04_responsive_navbar/public/)
 5. [FAQ](https://sbagdat.github.io/learn-front-end/05_faq/public/)
 
