@@ -1,6 +1,6 @@
 # Learn Front-End with Projects
 
-These project aims to teach front-end basics. I'm using it to teach my students. 
+These project aims to teach front-end basics. I have been using them to teach my students. 
 You can freely use it for educational purposes.  
 
 ## Beginner
